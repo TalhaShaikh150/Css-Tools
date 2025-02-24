@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Tools</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="controls-container">
+      <h2>Customize Box</h2>
+
+      <label>Pick a Color:</label>
+      <input type="color" class="color-selector" onchange="boxColor()">
+
+      <label>Pick a Shadow Color:</label>
+      <input type="color" class="shadow-color-selector" onchange="shadowColor()">
+      
+      <label>Adjust Size:</label>
+      <input type="range" class="size-selector" onchange="boxSize()" value="1" min="1" max="2.6" step="0.1">
+      <label>Adjust Radius:</label>
+      <input type="range" class="radius-selector" onchange="boxRadius()" value="0" min="0" max="60" step="1">
+        <label>Horizontal Length:</label>
+        <input type="range" class="horizontal-shadow" onchange="shadowHorizontal()" value="10" min="-100" max="100" step="1">
+        <label>Blur Strength:</label>
+        <input type="range" class="blur-shadow" onchange="shadowBlur()" value="0" min="20" max="100" step="1">
+        <label>Vertical Length:</label>
+        <input type="range" class="vertical-shadow" onchange="shadowVertical()" value="10" min="-100" max="100" step="1">
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+      </div>
+    </div>
+  </div>
+  <code class="css-code"></code>
+
+</body>
+</html>
+  <script src="./app.js"></script>
+</body>
+</html>
+
+
+   
